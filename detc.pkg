@@ -1,2 +1,4 @@
-detc.ado
-detc.sthlp
+v 1.0.0 // Version number 
+d Stata command to compute a diachronically-adjusted Expected Time to Compliance (D-ETC) 
+f detc.ado
+f detc.sthlp
