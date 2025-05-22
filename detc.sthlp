@@ -4,7 +4,7 @@ Title
 -----
 
 detc ypcvar reparation_id time
-Estimate adjusted and unadjusted exposure-to-compliance indicators
+Estimate adjusted and unadjusted Expected Time to Compliance (ETC)
 
 Syntax
 ------
@@ -13,16 +13,19 @@ Syntax
 
 Arguments:
 
-    ypcvar          Variable indicating the yearly probability of compliance (YPC) estimated by the model (range 0 to 1)
+    ypcvar          Variable indicating the yearly probability of compliance (YPC), estimated by prior model (range 0 to 1)
     reparation_id   Identifier for each reparation
     time            Time variable (e.g., years since reparation begins)
 
 Description
 -----------
 
-detc computes a time-weighted measure of the yearly probability of compliance (ARC: Adjusted Rate of Compliance)
-by down-weighting later periods based on a survival function derived from observed compliance rates.
-The method adjusts for the probability of early compliance, which reduces the likelihood of compliance in later periods.
+detc is a postestimation command that computes an adjusted measure of the Yearly Probability of Compliance (ypcvar).
+The ypcvar is the probability of compliance resulting from a predictive model for each reparation_id at point in time. 
+The unadjusted ETC is the inverse of the yearly probability of compliance, i.e., the average of 1/YPC.
+The adjusted measure (ARC: Adjusted Rate of Compliance) down-weights ypcvar in later periods based on the survival function.
+The method adjusts for the probability of early compliance, which reduces the exposure to compliance in later periods.
+The diachronically-adjusted ETC is the average of 1/ARC.
 
 Output
 ------
