@@ -1,0 +1,1 @@
+ p detc A Stata command to compute diachronically-adjusted Expected Time to Compliance (DETC)
