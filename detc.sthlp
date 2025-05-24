@@ -42,6 +42,7 @@ It also displays:
 
 Example
 -------
+    . net get detc
     . sysuse detcdata, clear
     . logit C M I t
     . predict ypc
