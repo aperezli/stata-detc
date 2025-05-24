@@ -4,7 +4,7 @@ Title
 -----
 
 detc ypcvar reparation_id time
-Estimate adjusted and unadjusted Expected Time to Compliance (ETC) 
+Diachronically-adjusted estimate of the Expected Time to Compliance (ETC) 
 
 Syntax
 ------
@@ -22,11 +22,11 @@ Description
 
 detc is a postestimation command that computes adjusted duration estimates resulting from discrete-time models. 
 The term "compliance" is used to describe any event predicted by a duration model, where reparation_id identifies 
-the units and the time variable identifies time periods. The prediction resulting from this model is ypcvar (for 
-Yearly Probability of Compliance), which reflects the risk of the event, conditional on the unit surviving to the 
+the units and the time variable identifies time periods. The prediction resulting from this model is ypcvar (YPC:
+Yearly Probability of Compliance), which reflects the risk of the event conditional on the unit surviving to the 
 observed time period. We can translate ypcvar into expected duration as 1/ypcvar.
-The detc procedure adjusts ypcvar to account for the fact that units are less likley to survive to the obsreved time 
-period if they were already likely to experience the event in earlier periods. It creates a new variable, arc_ypcvar 
+The detc procedure adjusts ypcvar to account for the fact that units are less likely to survive to the observed time 
+period if they were more likely to experience the event in earlier periods. It creates a new variable, arc_ypcvar 
 (ARC: Adjusted Rate of Compliance), which down-weights ypcvar in later periods based on the cumulative survival function.  
 This variable can be used to obtain more accurate duration estimates. The program reports the Expected Time to Compliance
 (ETC) for overall sample, using unadjusted (1/ypcvar) and adjusted (1/arc_ypcvar) measures. 
