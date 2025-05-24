@@ -24,7 +24,7 @@ The detc procedure adjusts ypcvar to account for the fact that units are less li
 period if they were more likely to experience the event in earlier periods. detc creates a new variable, arc_ypcvar 
 (ARC: Adjusted Rate of Compliance), which down-weights ypcvar in subsequent periods based on the cumulative survival function.  
 This variable can be used to obtain more accurate duration estimates. The program reports the Expected Time to Compliance
-(ETC) for overall sample, using unadjusted (1/ypcvar) and adjusted (1/arc_ypcvar) measures. 
+(ETC) for the overall sample, using unadjusted (1/ypcvar) and adjusted (1/arc_ypcvar) measures. 
 
 Output
 ------
