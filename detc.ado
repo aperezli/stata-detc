@@ -18,7 +18,7 @@
     gen       S_`ypc_' = 1 if `t_' == 0
     replace   S_`ypc_' = S_`ypc_'[_n-1]*(1 - `ypc_'[_n-1]) if `rep_' == `rep_'[_n-1]
     format    S_`ypc_' %9.3f
-    label var S_`ypc_' "Pr of exposure `ypc_'"
+    label var S_`ypc_' "Survival function for `ypc_'"
  * Compute sumS_ : total exposure over the life of each reparation
 	by   `rep_' : egen sumS_ = sum(S_`ypc_')  
  * Compute relative exposure (weight 1) for observations within reparation
