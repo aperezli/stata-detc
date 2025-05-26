@@ -1,5 +1,7 @@
 v 1.0.0 // Version number 
-d Stata command to compute a diachronically-adjusted Expected Time to Compliance (ETC) 
+n detc
+d Stata command to compute adjusted duration estimates from discrete-time models
+a Aníbal Pérez-Liñán, University of Notre Dame <aperezl1@nd.edu>
 f detc.ado
 f detc.sthlp
 f detcdata.dta
