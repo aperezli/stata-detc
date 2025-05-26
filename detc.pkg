@@ -1,7 +1,7 @@
 v 1.0.0 // Version number 
-detc - Diachronically adjusted estimate of the Expected Time to Compliance
-Stata command to compute adjusted duration estimates from discrete-time models
-Aníbal Pérez-Liñán, University of Notre Dame <aperezl1@nd.edu>
+d detc - Diachronically adjusted estimate of the Expected Time to Compliance
+d Stata command to compute adjusted duration estimates from discrete-time models
+a Aníbal Pérez-Liñán, University of Notre Dame <aperezl1@nd.edu>
 f detc.ado
 f detc.sthlp
 f detcdata.dta
